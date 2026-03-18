@@ -5,7 +5,7 @@
 ```bash
 # 启动应用
 ./mvnw spring-boot:run
-
+clean install -DskipTests
 # 运行测试
 ./mvnw test
 
