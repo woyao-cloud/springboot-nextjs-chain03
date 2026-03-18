@@ -27,13 +27,6 @@ type: feat|fix|docs|style|refactor|perf|test|chore
 
 ## 质量门禁
 
-```bash
-# 提交前运行
-black --check
-flake8
-mypy
-pytest --cov=app
-```
 
 ## 发布流程
 
@@ -41,3 +34,17 @@ pytest --cov=app
 2. 更新版本号和 CHANGELOG
 3. 合并到 main 和 develop
 4. 打标签并部署
+
+## 开发环境配置
+
+### 后端开发
+- JDK 21+
+- Maven 3.9+ 或 Gradle 8+
+- IDE: IntelliJ IDEA / VS Code (Spring Boot Extension Pack)
+- 本地数据库: PostgreSQL 
+
+### 后端服务
+- 使用docker-compose 配置本地开发环境运行PostgreSQL:15及redies:6.2
+
+### 数据库初始
+- 生成数据库创建脚本及导入初始数据到数据库的脚本

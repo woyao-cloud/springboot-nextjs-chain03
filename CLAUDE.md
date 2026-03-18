@@ -2,15 +2,16 @@
 
 ## 项目概述
 
-全栈用户管理系统，采用 FastAPI 后端和 Next.js 前端，提供用户注册、登录、权限管理、角色分配等功能。
+全栈用户管理系统，采用 Spring Boot 后端和 Next.js 前端，提供用户注册、登录、权限管理、角色分配等功能。
 
 ## 技术栈
 
 ### 后端
-- FastAPI + Python 3.11
-- SQLAlchemy 2.0 + Alembic
-- PostgreSQL (生产) / SQLite (开发)
-- JWT + OAuth2 认证
+- Spring Boot 3.2 + Java 21
+- Spring Data JPA + Hibernate
+- PostgreSQL (生产/开发，通过 Docker Compose)
+- Spring Security + JWT 认证
+- Redis (缓存)
 
 ### 前端
 - Next.js 14 (App Router)
@@ -24,16 +25,16 @@
 
 ## 开发原则
 
-1. 类型安全: TypeScript + Python 类型提示
+1. 类型安全: TypeScript + Java 强类型
 2. 测试驱动: 覆盖率 > 85%
-3. 分层架构: 路由 → 服务 → 仓储 → 模型
+3. 分层架构: Controller → Service → Repository → Entity
 4. 安全第一: 最小权限、输入验证、防御性编程
 
 ## 项目结构
 
 ```
-fastapi-nextjs-chain03/
-├── backend/          # FastAPI 后端
+springboot-nextjs-chain03/
+├── backend/          # Spring Boot 后端
 ├── frontend/         # Next.js 前端
 ├── docs/            # 文档
 └── scripts/         # 脚本
