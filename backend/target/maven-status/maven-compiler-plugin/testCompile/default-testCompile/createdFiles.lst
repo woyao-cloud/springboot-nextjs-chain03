@@ -1,5 +1,5 @@
-com\example\usermanagement\repository\UserRepositoryTest.class
-com\example\usermanagement\controller\UserControllerTest.class
-com\example\usermanagement\service\UserServiceTest.class
-com\example\usermanagement\controller\AuthControllerTest.class
-com\example\usermanagement\security\JwtTokenProviderTest.class
+com\usermanagement\controller\UserControllerTest.class
+com\usermanagement\repository\UserRepositoryTest.class
+com\usermanagement\controller\AuthControllerTest.class
+com\usermanagement\security\JwtTokenProviderTest.class
+com\usermanagement\service\UserServiceTest.class

@@ -94,3 +94,14 @@ pids/
 .cache/
 *.bak
 *.tmp
+
+
+# Java / Maven
+backend/target/
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/
+
